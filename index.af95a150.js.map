@@ -1,0 +1,1 @@
+{"mappings":"AAEAA,QAAQC,IAAI","sources":["src/index.js"],"sourcesContent":["import { fetchCountries } from \"/src/fetchCountries.js\";\n\nconsole.log(\"test\");"],"names":["console","log"],"version":3,"file":"index.af95a150.js.map"}
