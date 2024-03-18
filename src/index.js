@@ -31,6 +31,7 @@ function readCountries(){
             }
             else {
                 Notify.info("Too many matches found. Please enter a more specific name.");
+                clearData();
                 return;
             }
     })
@@ -64,9 +65,9 @@ const createCountryItem = res => {
     return res.map(  
         ({ name, capital, population, flags, languages }) => 
         `<h1><img src=${flags.png} alt=${name.official} width="60" height="40"> ${name.official}</h1>
-        <p>Capital: ${capital}</p>
-        <p>Population: ${population}</p>
-        <p>Languages: ${Object.values(languages)}</p>
+        <p><strong>Capital:</strong> ${capital}</p>
+        <p><strong>Population:</strong> ${population}</p>
+        <p><strong>Languages:</strong> ${Object.values(languages)}</p>
         `
     )};
 
